@@ -3,5 +3,7 @@ def search_and_replace_text(search_sentence, text):
     
     if ''.join(search_sentence) not in text:
         return "N/A"
+    elif len(search_sentence) < 2:
+        return "N/A"
     
     return text
